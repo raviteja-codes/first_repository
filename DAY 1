@@ -1,0 +1,749 @@
+DAY 1
+3.
+a = int(input())
+b = int(input())
+print(a+b)
+print(a-b)
+print(a*b
+print(a/b)
+
+4.
+l = int(input())
+b = int(input())
+p = 2*(l+b)
+
+5.
+l = int(input())
+b = int(input())
+print(l*b)
+
+6.
+r = int(input())
+print(2*r)
+print(3.14*(r**2))
+
+7.
+l = int(input())
+m = l/100
+k = l/1000
+print(m,k)
+
+8.
+c = int(input())
+f = (c*1.8)+32
+print(f)
+
+9.
+f = int(input())
+c = (f-32)*(5/9)
+print(c)
+
+10.
+days = int(input())
+year = days / 365
+week = (days - (year * 365)) / 7
+print(f"{year}")
+
+11.
+a = int(input())
+b = int(input())
+print(a**b)
+
+12.
+a = int(input())
+print(a**2)
+
+13.
+a = int(input())
+b = int(input())
+c = 180-a-b
+print(c)
+
+14.
+h = int(input())
+b = int(input())
+a = 0.5*b*h
+
+15.
+a = int(input())
+area = ((3**0.5)/4)*(a**2)
+print(a)
+
+16.
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+e = int(input())
+print(a+b+c+d+e)
+print((a+b+c+d+e)/5)
+print(((a+b+c+d+e)/500)*100)
+
+17.
+p = eval(input())
+t = eval(input())
+r = eval(input())
+
+s = (p*t*r)/100
+print(s)
+
+18.
+p = eval(input())
+t = eval(input())
+r = eval(input())
+n = eval(input())
+ci = (p(1+(r/n))**(n*t)) - p 
+print(ci)
+
+IF ELSE QUESTIONS
+# 1. Program to find maximum between two numbers
+print("Program 1: Maximum between two numbers")
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+if a > b:
+    print(f"Maximum is: {a}")
+else:
+    print(f"Maximum is: {b}")
+
+print("\n" + "="*50 + "\n")
+
+# 2. Program to find maximum between three numbers
+print("Program 2: Maximum between three numbers")
+x = float(input("Enter first number: "))
+y = float(input("Enter second number: "))
+z = float(input("Enter third number: "))
+
+if x >= y and x >= z:
+    print(f"Maximum is: {x}")
+else:
+    if y >= z:
+        print(f"Maximum is: {y}")
+    else:
+        print(f"Maximum is: {z}")
+
+print("\n" + "="*50 + "\n")
+
+# 3. Program to check whether a number is negative, positive or zero
+print("Program 3: Check number sign")
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("Number is positive")
+else:
+    if num < 0:
+        print("Number is negative")
+    else:
+        print("Number is zero")
+
+print("\n" + "="*50 + "\n")
+
+# 4. Program to check whether a number is divisible by 5 and 11
+print("Program 4: Check divisibility by 5 and 11")
+num = int(input("Enter a number: "))
+
+if num % 5 == 0 and num % 11 == 0:
+    print("Number is divisible by both 5 and 11")
+else:
+    if num % 5 == 0:
+        print("Number is divisible by 5 but not by 11")
+    else:
+        if num % 11 == 0:
+            print("Number is divisible by 11 but not by 5")
+        else:
+            print("Number is not divisible by 5 or 11")
+
+print("\n" + "="*50 + "\n")
+
+# 5. Program to check whether a number is even or odd
+print("Program 5: Check even or odd")
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print("Number is even")
+else:
+    print("Number is odd")
+
+print("\n" + "="*50 + "\n")
+
+# 6. Program to check whether a year is leap year or not
+print("Program 6: Check leap year")
+year = int(input("Enter a year: "))
+
+if year % 4 == 0:
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not a leap year")
+    else:
+        print("Leap year")
+else:
+    print("Not a leap year")
+
+print("\n" + "="*50 + "\n")
+
+# 7. Program to check whether a character is alphabet or not
+print("Program 7: Check alphabet")
+char = input("Enter a character: ")
+
+if len(char) == 1:
+    if (char >= 'a' and char <= 'z') or (char >= 'A' and char <= 'Z'):
+        print("Character is an alphabet")
+    else:
+        print("Character is not an alphabet")
+else:
+    print("Please enter only one character")
+
+print("\n" + "="*50 + "\n")
+
+# 8. Program to check whether an alphabet is vowel or consonant
+print("Program 8: Check vowel or consonant")
+char = input("Enter an alphabet: ")
+
+if len(char) == 1:
+    if (char >= 'a' and char <= 'z') or (char >= 'A' and char <= 'Z'):
+        if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u' or char == 'A' or char == 'E' or char == 'I' or char == 'O' or char == 'U':
+            print("Vowel")
+        else:
+            print("Consonant")
+    else:
+        print("Please enter an alphabet")
+else:
+    print("Please enter only one character")
+
+print("\n" + "="*50 + "\n")
+
+# 9. Program to check whether a character is alphabet, digit or special character
+print("Program 9: Check character type")
+char = input("Enter a character: ")
+
+if len(char) == 1:
+    if (char >= 'a' and char <= 'z') or (char >= 'A' and char <= 'Z'):
+        print("Alphabet")
+    else:
+        if char >= '0' and char <= '9':
+            print("Digit")
+        else:
+            print("Special character")
+else:
+    print("Please enter only one character")
+
+print("\n" + "="*50 + "\n")
+
+# 10. Program to check whether a character is uppercase or lowercase
+print("Program 10: Check uppercase or lowercase")
+char = input("Enter a character: ")
+
+if len(char) == 1:
+    if char >= 'A' and char <= 'Z':
+        print("Uppercase alphabet")
+    else:
+        if char >= 'a' and char <= 'z':
+            print("Lowercase alphabet")
+        else:
+            print("Not an alphabet")
+else:
+    print("Please enter only one character")
+
+print("\n" + "="*50 + "\n")
+
+# 11. Program to input week number and print week day
+print("Program 11: Week day from week number")
+week_num = int(input("Enter week number (1-7): "))
+
+if week_num == 1:
+    print("Monday")
+else:
+    if week_num == 2:
+        print("Tuesday")
+    else:
+        if week_num == 3:
+            print("Wednesday")
+        else:
+            if week_num == 4:
+                print("Thursday")
+            else:
+                if week_num == 5:
+                    print("Friday")
+                else:
+                    if week_num == 6:
+                        print("Saturday")
+                    else:
+                        if week_num == 7:
+                            print("Sunday")
+                        else:
+                            print("Invalid week number")
+
+print("\n" + "="*50 + "\n")
+
+# 12. Program to input month number and print number of days
+print("Program 12: Days in month")
+month = int(input("Enter month number (1-12): "))
+
+if month == 1:
+    print("31 days")
+else:
+    if month == 2:
+        print("28 or 29 days")
+    else:
+        if month == 3:
+            print("31 days")
+        else:
+            if month == 4:
+                print("30 days")
+            else:
+                if month == 5:
+                    print("31 days")
+                else:
+                    if month == 6:
+                        print("30 days")
+                    else:
+                        if month == 7:
+                            print("31 days")
+                        else:
+                            if month == 8:
+                                print("31 days")
+                            else:
+                                if month == 9:
+                                    print("30 days")
+                                else:
+                                    if month == 10:
+                                        print("31 days")
+                                    else:
+                                        if month == 11:
+                                            print("30 days")
+                                        else:
+                                            if month == 12:
+                                                print("31 days")
+                                            else:
+                                                print("Invalid month number")
+
+print("\n" + "="*50 + "\n")
+
+# 13. Program to count total number of notes in given amount
+print("Program 13: Count currency notes")
+amount = int(input("Enter amount: "))
+notes_500 = 0
+notes_200 = 0
+notes_100 = 0
+notes_50 = 0
+notes_20 = 0
+notes_10 = 0
+notes_5 = 0
+notes_2 = 0
+notes_1 = 0
+
+if amount >= 500:
+    notes_500 = amount // 500
+    amount = amount % 500
+
+if amount >= 200:
+    notes_200 = amount // 200
+    amount = amount % 200
+
+if amount >= 100:
+    notes_100 = amount // 100
+    amount = amount % 100
+
+if amount >= 50:
+    notes_50 = amount // 50
+    amount = amount % 50
+
+if amount >= 20:
+    notes_20 = amount // 20
+    amount = amount % 20
+
+if amount >= 10:
+    notes_10 = amount // 10
+    amount = amount % 10
+
+if amount >= 5:
+    notes_5 = amount // 5
+    amount = amount % 5
+
+if amount >= 2:
+    notes_2 = amount // 2
+    amount = amount % 2
+
+if amount >= 1:
+    notes_1 = amount
+
+total_notes = notes_500 + notes_200 + notes_100 + notes_50 + notes_20 + notes_10 + notes_5 + notes_2 + notes_1
+print(f"Total notes required: {total_notes}")
+print(f"500: {notes_500}, 200: {notes_200}, 100: {notes_100}, 50: {notes_50}, 20: {notes_20}, 10: {notes_10}, 5: {notes_5}, 2: {notes_2}, 1: {notes_1}")
+
+print("\n" + "="*50 + "\n")
+
+# 14. Program to check whether triangle is valid or not using angles
+print("Program 14: Validate triangle using angles")
+angle1 = float(input("Enter first angle: "))
+angle2 = float(input("Enter second angle: "))
+angle3 = float(input("Enter third angle: "))
+
+if angle1 + angle2 + angle3 == 180 and angle1 > 0 and angle2 > 0 and angle3 > 0:
+    print("Valid triangle")
+else:
+    print("Invalid triangle")
+
+print("\n" + "="*50 + "\n")
+
+# 15. Program to check whether triangle is valid using sides
+print("Program 15: Validate triangle using sides")
+side1 = float(input("Enter first side: "))
+side2 = float(input("Enter second side: "))
+side3 = float(input("Enter third side: "))
+
+if side1 > 0 and side2 > 0 and side3 > 0:
+    if (side1 + side2 > side3) and (side1 + side3 > side2) and (side2 + side3 > side1):
+        print("Valid triangle")
+    else:
+        print("Invalid triangle")
+else:
+    print("Invalid input: sides must be positive")
+
+print("\n" + "="*50 + "\n")
+
+# 16. Program to check triangle type (equilateral, isosceles, scalene)
+print("Program 16: Check triangle type")
+side1 = float(input("Enter first side: "))
+side2 = float(input("Enter second side: "))
+side3 = float(input("Enter third side: "))
+
+if side1 > 0 and side2 > 0 and side3 > 0:
+    if (side1 + side2 > side3) and (side1 + side3 > side2) and (side2 + side3 > side1):
+        if side1 == side2 and side2 == side3:
+            print("Equilateral triangle")
+        else:
+            if side1 == side2 or side2 == side3 or side1 == side3:
+                print("Isosceles triangle")
+            else:
+                print("Scalene triangle")
+    else:
+        print("Invalid triangle")
+else:
+    print("Invalid input: sides must be positive")
+
+print("\n" + "="*50 + "\n")
+
+# 17. Program to find all roots of quadratic equation
+print("Program 17: Roots of quadratic equation")
+a = float(input("Enter coefficient a: "))
+b = float(input("Enter coefficient b: "))
+c = float(input("Enter coefficient c: "))
+
+if a == 0:
+    print("Not a quadratic equation")
+else:
+    discriminant = b * b - 4 * a * c
+    
+    if discriminant > 0:
+        root1 = (-b + discriminant**0.5) / (2 * a)
+        root2 = (-b - discriminant**0.5) / (2 * a)
+        print(f"Two real roots: {root1} and {root2}")
+    else:
+        if discriminant == 0:
+            root = -b / (2 * a)
+            print(f"One real root: {root}")
+        else:
+            real_part = -b / (2 * a)
+            imaginary_part = (-discriminant)**0.5 / (2 * a)
+            print(f"Two complex roots: {real_part} + {imaginary_part}i and {real_part} - {imaginary_part}i")
+
+print("\n" + "="*50 + "\n")
+
+# 18. Program to calculate profit or loss
+print("Program 18: Calculate profit or loss")
+cost_price = float(input("Enter cost price: "))
+selling_price = float(input("Enter selling price: "))
+
+if selling_price > cost_price:
+    profit = selling_price - cost_price
+    profit_percent = (profit / cost_price) * 100
+    print(f"Profit: {profit}")
+    print(f"Profit percentage: {profit_percent:.2f}%")
+else:
+    if selling_price < cost_price:
+        loss = cost_price - selling_price
+        loss_percent = (loss / cost_price) * 100
+        print(f"Loss: {loss}")
+        print(f"Loss percentage: {loss_percent:.2f}%")
+    else:
+        print("No profit, no loss")
+
+print("\n" + "="*50 + "\n")
+
+# 19. Program to calculate grade based on marks
+print("Program 19: Calculate grade from marks")
+physics = float(input("Enter Physics marks: "))
+chemistry = float(input("Enter Chemistry marks: "))
+biology = float(input("Enter Biology marks: "))
+mathematics = float(input("Enter Mathematics marks: "))
+computer = float(input("Enter Computer marks: "))
+
+total_marks = physics + chemistry + biology + mathematics + computer
+percentage = (total_marks / 500) * 100
+
+print(f"Total marks: {total_marks}")
+print(f"Percentage: {percentage:.2f}%")
+
+if percentage >= 90:
+    print("Grade A")
+else:
+    if percentage >= 80:
+        print("Grade B")
+    else:
+        if percentage >= 70:
+            print("Grade C")
+        else:
+            if percentage >= 60:
+                print("Grade D")
+            else:
+                if percentage >= 40:
+                    print("Grade E")
+                else:
+                    print("Grade F")
+
+print("\n" + "="*50 + "\n")
+
+# 20. Program to calculate gross salary
+print("Program 20: Calculate gross salary")
+basic_salary = float(input("Enter basic salary: "))
+
+if basic_salary <= 10000:
+    hra = basic_salary * 0.20
+    da = basic_salary * 0.80
+else:
+    if basic_salary <= 20000:
+        hra = basic_salary * 0.25
+        da = basic_salary * 0.90
+    else:
+        hra = basic_salary * 0.30
+        da = basic_salary * 0.95
+
+gross_salary = basic_salary + hra + da
+print(f"Basic Salary: {basic_salary}")
+print(f"HRA: {hra}")
+print(f"DA: {da}")
+print(f"Gross Salary: {gross_salary}")
+
+print("\n" + "="*50 + "\n")
+
+# 21. Program to calculate electricity bill
+print("Program 21: Calculate electricity bill")
+units = float(input("Enter units consumed: "))
+bill = 0
+
+if units <= 50:
+    bill = units * 0.50
+else:
+    if units <= 150:
+        bill = 50 * 0.50 + (units - 50) * 0.75
+    else:
+        if units <= 250:
+            bill = 50 * 0.50 + 100 * 0.75 + (units - 150) * 1.20
+        else:
+            bill = 50 * 0.50 + 100 * 0.75 + 100 * 1.20 + (units - 250) * 1.50
+
+# Add 20% surcharge
+surcharge = bill * 0.20
+total_bill = bill + surcharge
+
+print(f"Units consumed: {units}")
+print(f"Bill before surcharge: Rs. {bill:.2f}")
+print(f"Surcharge (20%): Rs. {surcharge:.2f}")
+print(f"Total electricity bill: Rs. {total_bill:.2f}")
+
+
+
+SWITCH CASE QUESTIONS
+
+
+# 1. Print day of week name using switch case
+print("1. Day of Week Name:")
+day_number = int(input("Enter day number (1-7): "))
+
+if day_number == 1:
+    print("Monday")
+elif day_number == 2:
+    print("Tuesday")
+elif day_number == 3:
+    print("Wednesday")
+elif day_number == 4:
+    print("Thursday")
+elif day_number == 5:
+    print("Friday")
+elif day_number == 6:
+    print("Saturday")
+elif day_number == 7:
+    print("Sunday")
+else:
+    print("Invalid day number")
+
+print()
+print("=" * 50)
+print()
+
+# 2. Print total number of days in a month using switch case
+print("2. Total Days in Month:")
+month = int(input("Enter month number (1-12): "))
+
+if month == 1:
+    print("January has 31 days")
+elif month == 2:
+    print("February has 28 days")
+elif month == 3:
+    print("March has 31 days")
+elif month == 4:
+    print("April has 30 days")
+elif month == 5:
+    print("May has 31 days")
+elif month == 6:
+    print("June has 30 days")
+elif month == 7:
+    print("July has 31 days")
+elif month == 8:
+    print("August has 31 days")
+elif month == 9:
+    print("September has 30 days")
+elif month == 10:
+    print("October has 31 days")
+elif month == 11:
+    print("November has 30 days")
+elif month == 12:
+    print("December has 31 days")
+else:
+    print("Invalid month number")
+
+print()
+print("=" * 50)
+print()
+
+# 3. Check whether an alphabet is vowel or consonant
+print("3. Vowel or Consonant Check:")
+char = input("Enter an alphabet: ")
+
+if char == 'a' or char == 'A':
+    print("It is a vowel")
+elif char == 'e' or char == 'E':
+    print("It is a vowel")
+elif char == 'i' or char == 'I':
+    print("It is a vowel")
+elif char == 'o' or char == 'O':
+    print("It is a vowel")
+elif char == 'u' or char == 'U':
+    print("It is a vowel")
+else:
+    print("It is a consonant")
+
+print()
+print("=" * 50)
+print()
+
+# 4. Find maximum between two numbers
+print("4. Find Maximum Between Two Numbers:")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+if num1 > num2:
+    print("Maximum number is:", num1)
+elif num2 > num1:
+    print("Maximum number is:", num2)
+else:
+    print("Both numbers are equal")
+
+print()
+print("=" * 50)
+print()
+
+# 5. Check whether a number is even or odd
+print("5. Even or Odd Check:")
+number = int(input("Enter a number: "))
+remainder = number % 2
+
+if remainder == 0:
+    print("The number is even")
+elif remainder == 1:
+    print("The number is odd")
+
+print()
+print("=" * 50)
+print()
+
+# 6. Check whether a number is positive, negative or zero
+print("6. Positive, Negative or Zero Check:")
+num = float(input("Enter a number: "))
+
+if num > 0:
+    print("The number is positive")
+elif num < 0:
+    print("The number is negative")
+elif num == 0:
+    print("The number is zero")
+
+print()
+print("=" * 50)
+print()
+
+# 7. Find roots of quadratic equation
+print("7. Roots of Quadratic Equation:")
+print("For equation ax² + bx + c = 0")
+a = float(input("Enter coefficient a: "))
+b = float(input("Enter coefficient b: "))
+c = float(input("Enter coefficient c: "))
+
+# Calculate discriminant
+discriminant = (b * b) - (4 * a * c)
+
+if discriminant > 0:
+    print("Roots are real and different")
+    root1 = (-b + (discriminant ** 0.5)) / (2 * a)
+    root2 = (-b - (discriminant ** 0.5)) / (2 * a)
+    print("Root 1 =", root1)
+    print("Root 2 =", root2)
+elif discriminant == 0:
+    print("Roots are real and equal")
+    root = -b / (2 * a)
+    print("Root =", root)
+elif discriminant < 0:
+    print("Roots are complex")
+    real_part = -b / (2 * a)
+    imaginary_part = ((-discriminant) ** 0.5) / (2 * a)
+    print("Root 1 =", real_part, "+", imaginary_part, "i")
+    print("Root 2 =", real_part, "-", imaginary_part, "i")
+
+print()
+print("=" * 50)
+print()
+
+# 8. Simple Calculator using switch case
+print("8. Simple Calculator:")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = int(input("Enter your choice (1-4): "))
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+if choice == 1:
+    result = num1 + num2
+    print("Result:", num1, "+", num2, "=", result)
+elif choice == 2:
+    result = num1 - num2
+    print("Result:", num1, "-", num2, "=", result)
+elif choice == 3:
+    result = num1 * num2
+    print("Result:", num1, "*", num2, "=", result)
+elif choice == 4:
+    if num2 != 0:
+        result = num1 / num2
+        print("Result:", num1, "/", num2, "=", result)
+    else:
+        print("Error: Division by zero is not allowed!")
+else:
+    print("Invalid choice!")
+
+print()
+print("Program completed!")
